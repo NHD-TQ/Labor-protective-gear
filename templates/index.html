@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="with-device-width, initial-scale=1.0">
+<title>Detect Gear Protection</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+
+
+
+<!-- <html>
+<head>
+  <title>Detect Gear Protection</title>
+
+</head> -->
+<body>
+<!--<a href="\Book1.xlsx" download>-->
+
+<!--    <img src="\Book1.xlsx" alt="b" >-->
+<!--</a>-->
+<!--<a href="/app-yolov4/Book1.xlsx" download="/app-yolov4/Book1.xlsx">Download Text</a>-->
+
+
+
+<!--    <a href="/anh.jpg" download>-->
+  <!-- <h1 style="color:white";>Products</h1>
+  <p style="color:white;">Detect Protective Gear</p> -->
+  <section id="header">
+
+      <div><a href="#"><img src="anh.jpg" class="logo" alt=""></a>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="index.html">Register</a></li>
+          <li><a href="index.html">Checking</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="index.html">Contact</a></li>
+          
+        </ul>
+      </div>
+  </section>
+
+</body>
+
+
+
+
+</html>
+<a href="/app-yolov4/Book1.xlsx" download="/app-yolov4/Book1.xlsx">Download DaTa</a>
+
+
+<!--<a href="6868/myw3schoolsimage.jpg" download>-->
+<!--    <img src="6868/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">-->
+<!--</a>-->
+
+
+
+{% extends "bootstrap/base.html" %} {% block title %} {{ TITLE }} {% endblock %}
+{% block styles %} {{ super() }}
+
+<!-- Custom styles -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+{% endblock %} {% block content %}
+<h1>Detect Gear Protection</h1>
+
+<div id="container">
+  <img id="videoElement" src="{{ url_for('video_feed') }}" />
+  <form id="control">
+<!--    get_db:-->
+<!--    <a id="cam-preview"><button class="btn btn-default">get</button></a>-->
+    DB:
+      <a href="/anh.jpg" download></a>
+    Camera preview:
+    <a id="cam-preview"><button class="btn btn-default">On/Off</button></a>
+    Flip horizontal:
+    <a id="flip-horizontal"><button class="btn btn-default">On/Off</button></a>
+    Run detection model:
+    <a id="use-model"><button class="btn btn-default">On/Off</button></a>
+    <br />
+    <br />
+    Exposure:
+    <a id="exposure-down"><button class="btn btn-default">-1</button></a>
+    <a id="exposure-up"><button class="btn btn-default">+1</button></a>
+    Contrast:
+    <a id="contrast-down"><button class="btn btn-default">-4</button></a>
+    <a id="contrast-up"><button class="btn btn-default">+4</button></a>
+    <br />
+    <br />
+    <a id="reset-cam"><button class="btn btn-default">Reset camera</button></a>
+  </form>
+</div>
+{% endblock %} {% block scripts %}
+<!-- Imports -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Scripts -->
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename='script.js') }}"
+></script>
+
+{{ super() }} {% endblock %}

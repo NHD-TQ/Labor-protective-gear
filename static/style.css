@@ -1,0 +1,96 @@
+/* * Reset all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+/* * HTML elements */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5em;
+  width: 100%;
+  margin: 0px;
+}
+h1 {
+  color: #000000;
+  padding-left: 560px;
+  padding-top: 100px;
+}
+
+
+
+/* * Local selectors */
+#container {
+  margin: 0px auto;
+  margin-top: 40px;
+  width: 50%;
+  height:450px;
+  border: 10px #333 solid;
+  background-color: rgb(0, 0, 0);
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgba(0, 0, 0, 0.944)
+}
+
+#reset-cam {
+  color: #088178;
+
+}
+
+#container #videoElement {
+  width: auto;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: rgb(54, 54, 255);
+  box-shadow: 0 5px 15px rgba(0, 0,0,0.06);
+
+}
+
+#control {
+  margin-top: 40px;
+}
+#btn btn-default {
+  color: rgb(6, 6, 6);
+}
+.reset-cam {
+  color: rgb(5, 5, 228);
+}
+#body {
+  background-color: aquamarine;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar li{
+  list-style: none;
+  padding: 20px 20px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c6c6c6;
+  transition: 0.3s ease;
+
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+  color: #ffffff;
+}
